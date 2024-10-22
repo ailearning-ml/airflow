@@ -1,10 +1,10 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from datetime import datetime as dt, timedelta
+from datetime import datetime, timedelta
 
 default_args = {
     'owner': 'datamasterlab',
-    'start_date': dt.datetime(2024,10,22),
+    'start_date': datetime(2024,10,22),
     'catchup':False
 } 
 
